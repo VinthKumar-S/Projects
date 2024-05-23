@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/jquery-3.6.1.min.js"></script>
+<script type="text/javascript">
+	$(function()
+	{
+		var i=1;
+		$('#btn').click(function()
+		{			
+			$('#add').append("<div><input type='text' class='part "+i+"' value='t1-"+i+"'><input type='button' class='rm "+i+"' value='remove-"+i+"'></div><br>");
+			i=i+1;
+		});
+	});
+
+</script>
+</head>
+<body>
+<input type="button" value="Create" class="mk" id="btn">
+<div class="contain" id="add">
+</div>
+</body>
+</html>
